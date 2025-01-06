@@ -6,7 +6,7 @@ testing type speed
 
 ## Screen Shots
 
-<img src="https://github.com/aminfarzanepey/typeSpeedTest.git/blob/main/screenShots/screenshot.jpg?raw=true" width="600">
+<img src="https://github.com/aminfarzanepey/typeSpeedTest.git/blob/main/screenShot/Screenshot.jpg?raw=true" width="600">
 
 ## Installation
 
