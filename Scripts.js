@@ -1,4 +1,5 @@
 const theTimer = document.querySelector(".timer");
+const textArea = document.querySelector("#text-area");
 
 var timer = [0,0,0,0];
 
@@ -19,4 +20,8 @@ function runTimer() {
     timer[2] = Math.floor(timer[3] - (timer[1] * 100) - (timer[0] * 6000));
 }
 
+function Start(){
 setInterval(runTimer, 10);
+}
+
+textArea.addEventListener("keypress", Start);
