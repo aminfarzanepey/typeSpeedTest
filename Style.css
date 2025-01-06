@@ -1,0 +1,78 @@
+html{
+    font-size: 100%;
+    font-family: "Vazir";
+}
+
+body{
+    background: #373d49;
+    color :white;
+}
+
+.header{
+    font-size: 2rem;
+    background: #2f3640;
+    padding: 1rem;
+    text-align: center;
+    color: #fdcb6e;
+}
+
+.intro{
+    text-align: center;
+    background: #2f3640;
+    padding: 2rem;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 7rem;
+}
+
+.test-area{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.pattern{
+    margin: 1rem 0;
+}
+
+#origin-text{
+    margin-bottom: 1rem;
+    background-color:#2f3640;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+#text-area{
+    border: 0;
+    border-radius: 15px;
+    width: 500px;
+    margin-bottom: 2rem;
+    background-color: #2f3640;
+    color: white;
+    padding: 1rem;
+    text-align: right;
+    font-family: inherit;
+}
+
+.meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer{
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #2f3640;
+    padding: 0.6rem;
+    border-radius: 15px;
+}
+
+#reset{
+    background-color: #fdcb6e;
+    border: 0;
+    border-radius: 15px;
+    padding: .8rem 2rem;
+    font-family: inherit;
+    font-weight: bold;
+}
