@@ -21,7 +21,11 @@ function runTimer() {
 }
 
 function Start(){
-setInterval(runTimer, 10);
+    let textEnteredLength = textArea.value.length;
+
+    if (textEnteredLength == 0) {
+        setInterval(runTimer, 10);
+    }
 }
 
 textArea.addEventListener("keypress", Start);
