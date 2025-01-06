@@ -1,7 +1,7 @@
 const theTimer = document.querySelector(".timer");
 const textArea = document.querySelector("#text-area");
 const originText = document.querySelector("#origin-text p").innerHTML;
-
+const resetButton = document.querySelector("#reset");
 
 var timer = [0,0,0,0];
 var timeRuning = false;
@@ -31,6 +31,7 @@ function spellCheck() {
     if(textEntered == originText){
         textArea.style.borderColor = "#55efc4";
         clearInterval(interval);
+        alert("speed test over!");
     }else{
         if (textEntered == originTextMatch) {
         textArea.style.borderColor = "#ffeaa7";
@@ -39,6 +40,17 @@ function spellCheck() {
         textArea.style.borderColor = "#e17055";
         }
     }
+}
+
+function reset() {
+    clearInterval(interval);
+    interval = null;
+    timer = [0,0,0,0];
+    timeRuning = false;
+
+    textArea.value = "";
+    theTimer.innerHTML = "00:00:00";
+    textArea.style.borderColor = "#2d3436";
 }
 
 function Start(){
@@ -52,3 +64,4 @@ function Start(){
 
 textArea.addEventListener("keypress", Start);
 textArea.addEventListener("keyup", spellCheck);
+resetButton.addEventListener("click", reset);
