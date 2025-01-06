@@ -2,6 +2,7 @@ const theTimer = document.querySelector(".timer");
 const textArea = document.querySelector("#text-area");
 
 var timer = [0,0,0,0];
+var timeRuning = false;
 
 function leadingZero(time){
     if(time <= 9){
@@ -23,7 +24,8 @@ function runTimer() {
 function Start(){
     let textEnteredLength = textArea.value.length;
 
-    if (textEnteredLength == 0) {
+    if (textEnteredLength == 0 && !timeRuning) {
+        timeRuning = true;
         setInterval(runTimer, 10);
     }
 }
